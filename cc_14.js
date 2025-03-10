@@ -18,12 +18,11 @@ function addSupportTicket(ticketName,issueDesc,priorityLev){//build support tick
     const addButton=document.createElement('button');
     addButton.textContent='New Ticket';
 
-
-    const resolveButton=document.createElement('button');
-    resolveButton.textContent='Resolve'
-    resolveButton.addEventListener('click',()=>{
-        resolveButton(newTicket);
-    });
+// //     const resolveButton=document.createElement('button');
+// //     resolveButton.textContent='Resolve'
+// //     resolveButton.addEventListener('click',()=>{
+// //         resolveButton(newTicket);
+//     });
 };
 
 addSupportTicket('new ticket');
