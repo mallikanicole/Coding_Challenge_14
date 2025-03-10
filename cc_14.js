@@ -24,7 +24,6 @@ function addSupportTicket(ticketName,issueDesc,priorityLev){//build support tick
     resolveButton.addEventListener('click',()=>{
         resolveButton(newTicket);
     });
-    supportTicket.appendChild(card);
 };
 
 addSupportTicket('new ticket');
