@@ -57,3 +57,36 @@ resolveButton.addEventListener('click',(event)=>{
 addSupportTicket("Tyler Swift","Phone won't turn off","Low")
 addSupportTicket("Selena Hernandez","Fraud Suspected","High")
 addSupportTicket("Ariana Venti","Phone won't turn on","High")
+
+//Task 5 Inline Editing of Support Tickets
+
+
+//add edit button
+const editButton=document.createElement("button");
+editButton.textContent="Edit";
+
+editButton.addEventListener("click",function(){
+    const inputName=document.createElement("input");
+    inputName.value=heading.textContent;
+    const inputIssue=document.createElement("input");
+    inputIssue.value=paragraph.textContent;
+    const saveButton=document.createElement("button");
+    saveButton.textContent='Save';
+    card.appendChild(inputIssue);
+
+    card.appendChild(inputName);
+    card.appendChild(inputIssue);
+    card.appendChild(saveButton);
+    card.appendChild(removeButton);
+
+    saveButton.addEventListener("click",function(){
+        heading.textContent=inputName.value;
+        paragraph.textContent=inputIssue.value;
+
+        card.inner.HTML="";
+        card.appendChild(heading)
+        card.appendChild(paragraph)
+        card.appendChild(removeButton)
+        card.appendChild(editButton)
+    })
+})
