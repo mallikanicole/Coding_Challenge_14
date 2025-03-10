@@ -4,6 +4,7 @@ const elementID=document.getElementById('ticketContainer');
 const ticketCard=document.createElement('div');
 Card.setAttribute("class","ticket-card");
 Card.setAttribute("id","ticketName");
+card.classList.add('ticket-card')
 
 ticketContainer.appendChild(ticketCard);
 
