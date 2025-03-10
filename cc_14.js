@@ -18,11 +18,13 @@ function addSupportTicket(ticketName,issueDesc,priorityLev){//build support tick
     const addButton=document.createElement('button');
     addButton.textContent='New Ticket';
 
-// //     const resolveButton=document.createElement('button');
-// //     resolveButton.textContent='Resolve'
-// //     resolveButton.addEventListener('click',()=>{
-// //         resolveButton(newTicket);
-//     });
+    //Task 4
+    const resolveButton=document.createElement('button');
+    resolveButton.textContent='Resolve'
+    resolveButton.addEventListener('click',(event)=>{
+        resolveButton(newTicket);
+        event.stopPropagation();
+    });
 };
 
 addSupportTicket('new ticket');
@@ -44,11 +46,8 @@ function highlightHighPriority(){//select high priority tickets
 
 ticketContainer.addEventListener('click',()=>{
     console.log("Support ticket has been clicked")
-});
-resolveButton.addEventListener('click',(event)=>{
-    ticketContainer.removeChild(ticket);
-    event.stopPropagation();
-});
+});//logs message when support ticket clicked
+
 ticketCard.appendChild(ticketName);
 ticketCard.appendChild(issueDesc);
 ticketCard.appendChild(priorityLev);
