@@ -2,8 +2,8 @@
 
 const elementID=document.getElementById('ticketContainer');
 const ticketCard=document.createElement('div');
-ticketCard.setAttribute("class","ticket-card");
-ticketCard.setAttribute("id","ticketName")
+Card.setAttribute("class","ticket-card");
+Card.setAttribute("id","ticketName");
 
 ticketContainer.appendChild(ticketCard);
 
@@ -12,8 +12,11 @@ function addSupportTicket(ticketName,issueDesc,priorityLev){
     const newTicket=document.createElement('li');
     newTicket.setAttribute('class','support-ticket');
     newTicket.innerText=ticketName;
-    newTicket.addEventListener('click',()=>{
-        removeSupportTicket(newTicket);
+    const addButton=document.createElement('button');
+    addButton.textContent='New Ticket';
+    const removeButton=document.createElement('button');
+    removeButton.addEventListener('click',()=>{
+        removeButton(newTicket);
     });
-    supportTicket.appendChild(newTicket);
+    supportTicket.appendChild(card);
 };
