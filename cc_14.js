@@ -15,6 +15,7 @@ function addSupportTicket(ticketName,issueDesc,priorityLev){
     const addButton=document.createElement('button');
     addButton.textContent='New Ticket';
     const removeButton=document.createElement('button');
+    removeButton.textContent='Resolve'
     removeButton.addEventListener('click',()=>{
         removeButton(newTicket);
     });
