@@ -4,3 +4,11 @@ body{
     padding: 28px;
 }
 
+.ticket-card{
+    padding: 10px;
+    margin: 10px;
+    background-color: blueviolet;
+    border-radius: 5px;
+    display: inline-block;
+    border-color: tomato;
+}
