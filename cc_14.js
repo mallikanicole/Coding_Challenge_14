@@ -2,9 +2,9 @@
 
 const elementID=document.getElementById('ticketContainer');
 const ticketCard=document.createElement('div');
-Card.setAttribute("class","ticket-card");
-Card.setAttribute("id","ticketName");
-card.classList.add('ticket-card')
+ticketCard.setAttribute("class","ticket-card");
+ticketCard.setAttribute("id","ticketName");
+ticketCard.classList.add('ticket-card')
 
 ticketContainer.appendChild(ticketCard);
 
