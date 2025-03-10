@@ -53,10 +53,6 @@ resolveButton.addEventListener('click',(event)=>{
     event.stopPropagation()
 })
 
-ticketCard.appendChild(ticketName);
-ticketCard.appendChild(issueDesc);
-ticketCard.appendChild(priorityLev);
-ticketContainer.appendChild(ticket);
 
 addSupportTicket("Tyler Swift","Phone won't turn off","Low")
 addSupportTicket("Selena Hernandez","Fraud Suspected","High")
